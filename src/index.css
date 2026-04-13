@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 18% 8%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 18% 8%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 200 100% 55%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 15% 14%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 260 80% 65%;
+    --accent-foreground: 210 20% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 16%;
+    --input: 220 15% 16%;
+    --ring: 200 100% 55%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 55%), hsl(260 80% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(220 18% 10%), hsl(220 18% 6%));
+    --gradient-hero: radial-gradient(ellipse at 50% 0%, hsl(200 100% 55% / 0.08) 0%, transparent 60%);
+    --shadow-glow: 0 0 40px hsl(200 100% 55% / 0.15);
+    --shadow-card: 0 8px 32px hsl(220 20% 2% / 0.5);
+
+    --sidebar-background: 220 18% 6%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 200 100% 55%;
+    --sidebar-primary-foreground: 220 20% 4%;
+    --sidebar-accent: 220 15% 14%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 15% 16%;
+    --sidebar-ring: 200 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: hsl(200 100% 55% / 0.3);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glow-border {
+    box-shadow: var(--shadow-glow);
+    border: 1px solid hsl(200 100% 55% / 0.15);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 xl:px-32;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+.animate-slide-up { animation: slide-up 0.8s ease-out forwards; }
+
+@keyframes soundWave {
+  0% { height: 15%; }
+  100% { height: 90%; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.9) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-scale-in { animation: scale-in 0.3s ease-out forwards; }
+
+@keyframes agent-slide-up {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-agent-slide-up { animation: agent-slide-up 0.35s ease-out forwards; }
+
+@keyframes typingDot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+@keyframes agent-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.animate-agent-breathe { animation: agent-breathe 1.5s ease-in-out infinite; }
+
+@keyframes agent-soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.animate-agent-soft-pulse { animation: agent-soft-pulse 3s ease-in-out infinite; }
+
+.agent-chat-scroll::-webkit-scrollbar { width: 4px; }
+.agent-chat-scroll::-webkit-scrollbar-track { background: transparent; }
+.agent-chat-scroll::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 4px; }
+.agent-chat-scroll::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground) / 0.5); }
