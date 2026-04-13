@@ -33,13 +33,16 @@ export default function AIAgent() {
   const [chatHistory, setChatHistory] = useState<ChatMessage[]>([
     {
       role: "assistant",
-      content: "Hi! I'm Vaibhav's AI. Ask me anything about his work, skills, or experience!",
+      content: "Hi! I am Vaibhav's AI Twin. Ask me anything you want to know about me!",
       time: getTime(),
     },
   ]);
 
   const recognitionRef = useRef<any>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const hasGreeted = useRef(false);
+
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
   const status: AgentStatus = isListening
     ? "listening"
@@ -56,6 +59,64 @@ export default function AIAgent() {
     }
   }, [chatHistory.length, chatExpanded]);
 
+  // Load voices with async fallback for browsers that load them late
+  useEffect(() => {
+    const loadVoices = () => {
+      const available = window.speechSynthesis.getVoices();
+      if (available.length > 0) {
+        console.log("Available voices:", available.map((v) => `${v.name} (${v.lang})`));
+        setVoices(available);
+      }
+    };
+    loadVoices();
+    window.speechSynthesis.onvoiceschanged = loadVoices;
+    return () => { window.speechSynthesis.onvoiceschanged = null; };
+  }, []);
+
+  const selectVoice = useCallback((available: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null => {
+    const priority = [
+      "Google UK English Male",
+      "Microsoft David - English (United States)",
+      "Microsoft Mark - English (United States)",
+      "Microsoft James - English (United Kingdom)",
+      "Daniel",
+      "David",
+      "Mark",
+    ];
+    for (const name of priority) {
+      const match = available.find((v) => v.name === name);
+      if (match) return match;
+    }
+    return available.find((v) => v.lang.startsWith("en")) ?? available[0] ?? null;
+  }, []);
+
+  const speakText = useCallback(
+    (text: string) => {
+      if (isMuted || !window.speechSynthesis) return;
+      if (voices.length === 0) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "en-US";
+      utterance.rate = 0.95;
+      utterance.pitch = 1.0;
+      const voice = selectVoice(voices);
+      if (voice) utterance.voice = voice;
+      utterance.onstart = () => setIsSpeaking(true);
+      utterance.onend = () => setIsSpeaking(false);
+      utterance.onerror = () => setIsSpeaking(false);
+      window.speechSynthesis.speak(utterance);
+    },
+    [isMuted, voices, selectVoice]
+  );
+
+  // Auto-speak greeting once per session
+  useEffect(() => {
+    if (isOpen && !hasGreeted.current && voices.length > 0) {
+      hasGreeted.current = true;
+      speakText("Hi, I'm Vaibhav's AI twin. Curious about my journey, skills, or projects? Ask away.");
+    }
+  }, [isOpen, voices, speakText]);
+
   // Cleanup on close
   useEffect(() => {
     if (!isOpen) {
@@ -67,39 +128,6 @@ export default function AIAgent() {
       }
     }
   }, [isOpen]);
-
-  // Load voices
-  useEffect(() => {
-    window.speechSynthesis.getVoices();
-    window.speechSynthesis.onvoiceschanged = () => {
-      window.speechSynthesis.getVoices();
-    };
-  }, []);
-
-  const speakText = useCallback(
-    (text: string) => {
-      if (isMuted || !window.speechSynthesis) return;
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "en-IN";
-      utterance.rate = 0.95;
-      utterance.pitch = 1.0;
-      const voices = window.speechSynthesis.getVoices();
-      const preferred = voices.find(
-        (v) =>
-          v.lang === "en-IN" ||
-          v.name.includes("Rishi") ||
-          v.name.includes("Veena") ||
-          v.name.includes("Google")
-      );
-      if (preferred) utterance.voice = preferred;
-      utterance.onstart = () => setIsSpeaking(true);
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => setIsSpeaking(false);
-      window.speechSynthesis.speak(utterance);
-    },
-    [isMuted]
-  );
 
   const addMessage = useCallback((msg: Omit<ChatMessage, "time">) => {
     setChatHistory((prev) => [...prev, { ...msg, time: getTime() }]);
@@ -266,7 +294,7 @@ export default function AIAgent() {
             </span>
             <span className="flex flex-col items-start leading-tight">
               <span className="text-xs opacity-80">Talk to</span>
-              <span className="font-semibold -mt-0.5">Vaibhav's AI</span>
+              <span className="font-semibold -mt-0.5">Vaibhav's AI Twin</span>
             </span>
           </span>
         </button>
@@ -285,7 +313,7 @@ export default function AIAgent() {
                 <MessageCircle className="h-4 w-4 text-primary-foreground" />
               </div>
               <p className="font-display font-semibold text-sm text-foreground">
-                Ask Vaibhav's AI
+                Vaibhav's AI Twin
               </p>
             </div>
             <div className="flex items-center gap-1">
