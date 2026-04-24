@@ -74,14 +74,14 @@ export const projects = [
     tags: ["Python", "Gemini API", "SQL", "LLM"],
     deckUrl: "https://drive.google.com/file/d/10fRI4b3LjZNDuhSTm7dBozsjDnpLYyim/view?usp=sharing",
   },
-  {
-    title: "MOVE – End-to-End Travel Solutions",
-    subtitle: "Product Management",
-    period: "Apr 2025 – Jun 2025",
-    description: "Built an end-to-end shared commute solution for 5000 employees, cutting transport costs by 30% below industry benchmark using unit economics and route optimization.",
-    tags: ["Product Strategy", "Unit Economics", "GTM", "Hub-and-Spoke", "Data Analysis"],
-    deckUrl: "https://drive.google.com/file/d/1cR2-N52gdkVKeFz6fNU9ElAa06eJwjm2/view?usp=sharing",
-  },
+  // {
+  //   title: "MOVE – End-to-End Travel Solutions",
+  //   subtitle: "Product Management",
+  //   period: "Apr 2025 – Jun 2025",
+  //   description: "Built an end-to-end shared commute solution for 5000 employees, cutting transport costs by 30% below industry benchmark using unit economics and route optimization.",
+  //   tags: ["Product Strategy", "Unit Economics", "GTM", "Hub-and-Spoke", "Data Analysis"],
+  //   deckUrl: "https://drive.google.com/file/d/1cR2-N52gdkVKeFz6fNU9ElAa06eJwjm2/view?usp=sharing",
+  // },
   {
     title: "Nykaa Man Re-imagined with Gen-AI",
     subtitle: "Product Management",
