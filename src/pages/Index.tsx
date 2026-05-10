@@ -25,14 +25,14 @@ const Index = () => {
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left - Photo */}
+            {/* Left - Avatar */}
             <div className="flex justify-center md:justify-end animate-slide-up">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl rounded-full" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/40 blur-3xl" />
                 <img
-                  src="/Formals_photo.png"
+                  src="/Human_avatar_nobg.png"
                   alt="Vaibhav Jain"
-                  className="relative w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl"
+                  className="relative w-72 h-72 md:w-96 md:h-96 object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
