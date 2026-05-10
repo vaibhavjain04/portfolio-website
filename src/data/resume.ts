@@ -1,3 +1,5 @@
+import { Description } from "@radix-ui/react-toast";
+
 export const personalInfo = {
   name: "Vaibhav Jain",
   phone: "+91 6376214788",
@@ -31,6 +33,7 @@ export const experiences = [
       "Managed end-to-end project execution including solution finalization, stakeholder communication, risk tracking, and governance",
       "Designed a project execution tracker in Excel, migrated to JIRA which is expected to increase the efficiency by 20% ",
     ],
+    description: "I manage 5 simultaneous cloud migration projects in the Application Industrialization team — taking enterprise apps and making them cloud-ready on Azure, CaaS/CNP, and VM-based infrastructure. My role is end-to-end: designing Target Solution Designs (TSDs), running stakeholder calls with monitoring/DB/cloud ops/DevOps teams, writing project docs, tracking risks, and owning milestone delivery. Key initiative: I noticed zero centralized tracking existed — designed a project execution tracker in Excel, then drove migration to JIRA for sprint planning and real-time visibility. Entirely my initiative — identified the gap, built it, drove adoption. Projected 20% efficiency improvement. Masterclass in enterprise PM: complex org structures, multiple stakeholders, tight timelines, structured governance.",
   },
   {
     role: "Product Strategy & Operations Intern",
@@ -42,6 +45,7 @@ export const experiences = [
       "Doubled client-handling capacity by authoring 10+ PRDs, defining product roadmaps, and closely collaborating with tech teams to design scalable AI workflows and contribute to overall AI system architecture and implementation",
       "Improved operational efficiency by designing workflows, SOPs, KPIs and automated processes to reduce manual effort",
     ],
+    description: "Premium concierge company — dedicated Lifestyle Managers (LMs) handle all tasks for high-net-worth clients. I had dual ownership: internal tooling + client-facing product. Wore multiple hats: PM, ops analyst, data strategist. Key projects: (1) Finance Reconciliation App: Finance team was doing manual Excel reconciliation — 10 days per cycle for 80 clients, error-prone, unscalable. I did user research, mapped ideal workflow, authored PRDs for a purpose-built app integrated with payments provider, invoice system, and direct mail. Result: 10 days for 80 clients → 3 days for 120 clients. 300% efficiency improvement. (2) OCR Feature for HarmonyOS (internal ops platform): LMs manually entered every bill/invoice detail — tedious and slow. I identified OCR as the fix, mapped the user journey, wrote the PRD, collaborated with tech team to integrate into task creation flow. Result: LM client-handling capacity doubled. (3) Churn Analysis & Reduction: Churn was at 20% when I joined. I built a churn scoring framework using transaction history, WhatsApp chat behavior, task frequency, and task severity — predicted at-risk clients 1 month in advance. Contributed to product strategy: festive plans, freebies, engagement triggers. Result: Churn dropped 20% → 5% over 5 months (75% reduction).",
     deckUrl: "https://drive.google.com/file/d/1VTYD8YK6_vefYqQCFTHQJfBsP-ir9c9Y/view?usp=sharing",
   },
   {
@@ -54,6 +58,7 @@ export const experiences = [
       "Identified critical gaps in sprinkler distribution & proposed data-driven infrastructure upgrades",
       "Presented data-backed operational improvements enabling on-ground implementation",
     ],
+    description: "Assessed fire safety coverage post-terminal expansion using site layout and pump capacity data. Identified critical gaps in sprinkler distribution, proposed data-driven infrastructure upgrades, presented operational improvements for on-ground implementation.",
   },
 ];
 

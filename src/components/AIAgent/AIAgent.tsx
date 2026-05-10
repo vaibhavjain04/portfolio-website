@@ -347,7 +347,7 @@ export default function AIAgent() {
               ))}
 
               <div
-                className={`relative h-20 w-20 rounded-full flex items-center justify-center transition-all duration-500 ${
+                className={`relative h-20 w-20 rounded-full flex items-center justify-center transition-all duration-500 overflow-hidden ${
                   status === "listening"
                     ? "bg-destructive/20 border-2 border-destructive shadow-lg shadow-destructive/20 animate-agent-breathe"
                     : status === "thinking"
@@ -362,28 +362,15 @@ export default function AIAgent() {
                     : undefined
                 }
               >
-                {status === "idle" && (
-                  <Mic className="h-8 w-8 text-muted-foreground" />
-                )}
-                {status === "listening" && (
-                  <Mic className="h-8 w-8 text-destructive animate-pulse" />
+                {(status === "idle" || status === "listening" || status === "speaking") && (
+                  <img
+                    src="/Human_avatar.avif"
+                    alt="AI Avatar"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 )}
                 {status === "thinking" && (
                   <div className="h-8 w-8 rounded-full border-2 border-muted-foreground/40 border-t-primary animate-spin" />
-                )}
-                {status === "speaking" && (
-                  <div className="flex items-end gap-[3px] h-7">
-                    {[0, 1, 2, 3, 4].map((i) => (
-                      <span
-                        key={i}
-                        className="w-[3px] rounded-full bg-primary"
-                        style={{
-                          animation: `soundWave 0.7s ease-in-out ${i * 0.08}s infinite alternate`,
-                          height: "30%",
-                        }}
-                      />
-                    ))}
-                  </div>
                 )}
               </div>
             </div>

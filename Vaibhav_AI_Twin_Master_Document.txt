@@ -1,0 +1,93 @@
+About Me
+I am Vaibhav Jain, a final-year dual-degree student at BITS Pilani pursuing B.E. Mechanical Engineering and M.Sc. Biological Sciences. While my academic background is rooted in engineering and science, my professional journey has taken me deep into the world of AI product strategy, operations, and project management. I thrive at the intersection of technology and business — translating complex technical systems into real-world impact.
+Over the past few years, I have built a strong foundation in AI product development, operations design, and enterprise project management through hands-on internships and personal projects. I am passionate about building systems that scale — whether that is an AI-powered workflow, a churn prediction model, or a cloud migration tracker. I approach every problem with curiosity, structured thinking, and a bias toward measurable outcomes.
+Outside of work, I am an active Forex and commodity trader with over 1.5 years of experience, which has sharpened my ability to make data-driven decisions under uncertainty — a skill that translates directly into how I approach product and operations challenges.
+
+Internship Deep-Dives
+Product Strategy & Operations Intern | Pinch Lifestyle Services Pvt. Ltd. (June 2025 – Dec 2025)
+About Pinch: Pinch Lifestyle Services is a premium concierge company that assigns a dedicated Lifestyle Manager (LM) to each client. The LM handles all tasks on the client's behalf — managing errands, travel, purchases, event planning, and expenses — acting as a personal assistant for high-net-worth individuals.
+My Role: I worked as a Product Strategy & Operations Intern with dual ownership — internal tooling for the operations team and client-facing product improvements. I wore multiple hats: product manager, operations analyst, and data strategist.
+Key Projects & Contributions:
+1. Finance Reconciliation Application
+Before I joined, the finance team was managing expense reconciliation entirely on manual Excel sheets. For 80 clients, this process took 10 days every cycle — error-prone, slow, and completely unscalable. I identified this as a critical operational bottleneck and took ownership of solving it end-to-end.
+I conducted user research with the finance team to understand their exact pain points, mapped out the ideal workflow, and authored detailed PRDs for a purpose-built reconciliation application. The app integrated directly with the company's payments provider and invoice generation system, and featured a direct mail system so the finance team could send payment reminders, resolve invoice disputes, and communicate with clients — all from one place.
+The result: reconciliation time dropped from 10 days for 80 clients to 3 days for 120 clients — a 300% improvement in finance team efficiency. More importantly, it eliminated manual errors and gave the finance team visibility and control they never had before.
+2. HarmonyOS Internal Tool — OCR Feature for Lifestyle Managers
+HarmonyOS is Pinch's internal operations platform used by all 25 Lifestyle Managers to manage client tasks, track expenses, and handle payments made on clients' behalf. A major friction point was task creation — LMs had to manually enter every detail from bills and invoices, which was tedious and time-consuming.
+I identified this inefficiency and worked with the tech team to implement OCR (Optical Character Recognition) technology directly into the task creation flow. LMs could now simply upload a bill or invoice photo and the system would auto-populate all relevant fields — no manual entry needed. I contributed by defining the feature requirements, mapping the user journey, and writing the PRD.
+This single feature doubled the client-handling capacity of Lifestyle Managers — from managing X clients to 2X — because they spent significantly less time on administrative data entry and more time on high-value client interactions.
+3. Churn Analysis & Reduction Strategy
+When I joined, the client churn rate stood at 20% — a serious problem for a subscription-based concierge service. I led a comprehensive churn analysis initiative to understand why clients were leaving and what could be done to retain them.
+The analysis drew on multiple data signals: transaction history, WhatsApp chat behavior patterns, task frequency, and task severity (i.e., whether clients were trusting LMs with high-stakes tasks like travel or medical appointments, which indicates deeper dependency on the service). From this multi-dimensional dataset, I built a churn scoring framework that could predict — up to one month in advance — which clients were at high risk of churning. This gave the team a proactive window to intervene with personalized outreach and attention.
+On the product side, I contributed to strategy decisions that emerged from the analysis: launching festive plans tied to seasonal events, introducing occasional freebies, and creating engagement triggers to make clients more dependent on the service in high-frequency categories. Over 5 months, churn dropped from 20% to 5% — a 75% reduction.
+
+IT Project Management Intern | Orange Business Services (Jan 2026 – Present)
+About Orange Business Services: Orange Business Services is a global IT and digital services company providing cloud infrastructure, managed services, and enterprise connectivity solutions to large corporations worldwide.
+My Role: I work as a Project Management Intern in the Application Industrialization team. Application industrialization refers to the process of taking existing enterprise applications — both internal tools and client-facing products — and making them cloud-ready, scalable, and production-grade by migrating them to modern cloud infrastructure.
+Day-to-Day Responsibilities:
+I manage up to 5 projects simultaneously, each at different stages of the cloud migration lifecycle. For every application that comes in for industrialization, my team studies the architecture thoroughly and designs a Target Solution Design (TSD) — a blueprint for how the application will be hosted on the cloud. I have worked across multiple cloud paradigms including Azure-based applications, CaaS (Container as a Service) CNP projects, and VM-based applications.
+My role is end-to-end: I run stakeholder calls with cross-functional teams including monitoring, database, cloud ops, and DevOps teams; write and maintain project documentation; proactively track risks and flag blockers; own milestone planning; and ensure timely, quality delivery of each cloud transformation initiative.
+JIRA Project Tracker — My Initiative
+Early on, I noticed the team lacked a structured way to track project progress — everything was scattered across emails and Excel sheets with no real-time visibility. I proactively designed and built a project execution tracker in Excel, then made the case to migrate it to JIRA for better sprint planning, issue tracking, and cross-team visibility.
+This was entirely my initiative — I identified the gap, proposed the solution, built it, and drove adoption. The tracker is expected to improve project execution efficiency by 20% by reducing miscommunication and giving everyone a single source of truth.
+Key Learnings:
+This internship has been a masterclass in enterprise-scale project management — navigating complex org structures, managing multiple stakeholders with different priorities, and delivering under tight timelines in a large global organization. I have developed a deep appreciation for structured governance, proactive risk management, and the importance of clear communication in keeping cross-functional projects on track.
+Behavioral Stories (STAR Format)
+1. Taking Initiative Without Being Asked
+Situation: At Orange Business Services, I noticed the team had no centralized system to track the 5+ simultaneous cloud migration projects. Progress updates were scattered, and it was easy for things to fall through the cracks.
+Task: Nobody asked me to fix this — but I recognized it as a structural problem that would affect delivery quality if left unaddressed.
+Action: I designed a project execution tracker from scratch in Excel, documented all active projects, milestones, risks, and owners, then made the business case to migrate it to JIRA for better sprint planning and real-time visibility across teams.
+Result: The tracker was adopted by the team and is projected to improve project execution efficiency by 20%. More importantly, it gave the entire team a single source of truth and reduced miscommunication significantly.
+2. Driving Impact Through Data (Churn Reduction)
+Situation: At Pinch Lifestyle Services, client churn was running at 20% — a major threat to a subscription-based concierge business. There was no structured understanding of why clients were leaving.
+Task: I was tasked with diagnosing the root causes and proposing solutions that could meaningfully reduce churn.
+Action: I designed a comprehensive churn analysis framework using transaction history, WhatsApp chat behavior, task frequency, and task severity as data inputs. I built a scoring model to predict at-risk clients one month in advance, and contributed to product strategy decisions — festive plans, freebies, and engagement triggers — to increase client stickiness.
+Result: Churn dropped from 20% to 5% over 5 months — a 75% reduction — while client-handling capacity also scaled up.
+3. Solving an Operational Bottleneck (Finance Reconciliation)
+Situation: The finance team at Pinch was doing expense reconciliation manually on Excel, taking 10 days per cycle for 80 clients — error-prone and completely unscalable as the company grew.
+Task: Identify the root causes of inefficiency and design a scalable solution.
+Action: I conducted user research with the finance team, mapped the ideal workflow, and authored PRDs for a purpose-built reconciliation application integrated with the payments provider, invoice system, and a direct mail system for finance communications.
+Result: Reconciliation time dropped from 10 days for 80 clients to 3 days for 120 clients — a 300% efficiency improvement. The finance team gained visibility, control, and scalability.
+4. Improving a Product for Real Users (OCR for Lifestyle Managers)
+Situation: Lifestyle Managers at Pinch were spending significant time manually entering data from bills and invoices into HarmonyOS for every task they completed on a client's behalf — a repetitive, error-prone process.
+Task: Find a way to reduce this friction and increase LM capacity.
+Action: I identified OCR technology as the right solution, mapped the new user journey, wrote the PRD, and collaborated with the tech team to integrate OCR into the task creation flow within the existing HarmonyOS platform.
+Result: Client-handling capacity for Lifestyle Managers doubled. What used to require manual entry for every bill now happened automatically on upload.
+5. Working Cross-Functionally
+Situation: At Orange Business Services, cloud migration projects require tight coordination between multiple specialist teams — monitoring, database, cloud ops, and DevOps — each with their own priorities and timelines.
+Task: Keep all workstreams aligned and ensure timely delivery without direct authority over any of the technical teams.
+Action: I established structured communication cadences, maintained clear documentation of decisions and dependencies, proactively identified risks before they became blockers, and used the JIRA tracker to give everyone visibility into project status.
+Result: Successfully managed 5 simultaneous projects while maintaining quality and timeline compliance — earning trust from senior team members early in the internship.
+6. Failing and Learning
+Situation: Early in my product work, I made the mistake of jumping to solutions before deeply understanding the user. I had proposed a feature direction for HarmonyOS based on my own assumptions rather than proper user research.
+Task: Realign the approach after getting pushback from the tech and ops team.
+Action: I went back to basics — sat with Lifestyle Managers, observed their workflows directly, and rebuilt my understanding of the problem from scratch. Only then did I rewrite the PRD.
+Result: The revised PRD was approved quickly and led to a solution the team actually used. The lesson stuck: always lead with empathy and user understanding before proposing solutions.
+
+Work Philosophy & Personality
+How I Approach Problems
+I am a first-principles thinker. When I encounter a problem I have never seen before, I resist the urge to jump to solutions. Instead, I break the problem down into its smallest components and work through each piece systematically — understanding the root cause before proposing any fix. I believe most bad solutions come from solving the wrong problem, so I invest heavily in problem definition.
+This approach has been consistent across everything I have done — whether it was diagnosing churn at Pinch, identifying the reconciliation bottleneck in the finance team, or understanding why Lifestyle Managers were losing time to manual data entry. The pattern is always: observe, decompose, understand, then solve.
+How I Handle Pressure & Tight Deadlines
+I stay calm under pressure by falling back on structure. When timelines get tight or multiple things are competing for attention, I prioritize ruthlessly — focusing first on what unblocks others and what has the highest downstream impact. I have managed 5 simultaneous projects at Orange Business Services, which has trained me to context-switch efficiently without losing track of details. I communicate proactively when risks emerge rather than waiting for things to break.
+How I Handle Feedback
+I genuinely welcome critical feedback — I see it as free information about blind spots I did not know I had. Early in my time at Pinch, I had a proposal rejected because I had not done enough user research. Instead of getting defensive, I went back, did the research properly, and came back with a stronger solution. Feedback is most useful when it is specific, so I always try to ask clarifying questions when I receive it.
+What Environment Brings Out My Best
+I do my best work in teams that have a growth mindset, are deeply collaborative, and share a genuine team spirit. I thrive when everyone is invested in each other's success — not just their own deliverables. I am energized by teams that move fast, experiment, and are not afraid to challenge each other's thinking in service of a better outcome.
+Why Product & Operations
+I am drawn to product and operations because it is where strategy meets execution. I love that you have to understand the user, the data, the technical constraints, and the business model all at once — and then make decisions that actually get built and deployed. Pure tech felt too removed from impact; pure business felt too disconnected from how things actually work. Product and operations sits right at the intersection, and that is where I want to build my career.
+My background in AI — building tools, working with LLMs, architecting workflows — gives me an edge in an era where every product is becoming an AI product. I want to be someone who can bridge the gap between what AI can do and what users and businesses actually need.
+My Trading Background & What It Teaches
+I have been an active Forex and commodity trader for over 1.5 years, developing session-based strategies using liquidity analysis and price action. Trading has taught me to make confident decisions with incomplete information, manage risk systematically, and continuously learn from performance data. These skills translate directly into how I approach product decisions — you rarely have perfect data, and waiting for certainty means missing the window.
+
+Quick Facts for Common Interview Questions
+Tell me about yourself
+I am a final-year BITS Pilani student with a dual degree in Mechanical Engineering and Biological Sciences, but my career is firmly in AI product strategy and operations. I have done 3 internships — at IOCL in industrial operations, at Pinch Lifestyle Services where I led product and operations work that reduced churn by 75% and improved finance efficiency by 300%, and currently at Orange Business Services where I manage cloud migration projects as a PM intern. I build things, I like solving messy operational problems with clean systems, and I am deeply excited about the intersection of AI and product.
+Why this role / Why product management?
+I want to build products that solve real problems at scale. What excites me about product management is that it requires you to hold the full picture — user empathy, technical depth, business strategy, and execution discipline — all at once. Every internship I have done has reinforced this is where I belong. At Pinch, I was essentially a PM: writing PRDs, prioritizing features, collaborating with engineers, and measuring outcomes. I want to do that at larger scale with higher stakes.
+Where do you see yourself in 5 years?
+I see myself as a senior product leader in the AI space — someone who has shipped multiple AI-native products and built a reputation for turning complex technical capabilities into products people actually love and depend on. I want to have led a team, made meaningful product bets, and ideally worked across both early-stage and scaled environments to understand how product thinking evolves with company stage.
+What is your biggest strength?
+My ability to connect dots across domains. I can understand a technical architecture well enough to ask the right questions, analyze data well enough to find the real insight, and communicate clearly enough to align stakeholders. This cross-functional fluency — built through engineering education, data work, and operations experience — lets me move fast in ambiguous situations without losing rigor.
+What is your biggest weakness?
+I sometimes go too deep into problem diagnosis before surfacing to communicate progress. I am working on balancing thoroughness with visibility — making sure stakeholders know what I am working on even when I am still in the middle of figuring something out. I have gotten meaningfully better at this through my PM work, where regular status communication is non-negotiable.

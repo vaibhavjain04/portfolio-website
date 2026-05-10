@@ -23,33 +23,50 @@ const Index = () => {
           <Hero3D />
         </Suspense>
 
-        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-          <p className="text-primary font-display font-medium text-sm tracking-widest uppercase mb-4 animate-slide-up">
-            {personalInfo.tagline}
-          </p>
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Hi, I'm{" "}
-            <span className="text-gradient">{personalInfo.name.split(" ")[0]}</span>
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            {personalInfo.bio}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <a
-              href="#experience"
-              className="px-8 py-3.5 rounded-xl font-medium text-primary-foreground transition-all duration-300 hover:scale-105"
-              style={{ background: "var(--gradient-primary)" }}
-            >
-              View My Work
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1k_5z-Vxw--MRRUFhr93Y6J_MThtmbeV9/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3.5 rounded-xl font-medium text-secondary-foreground bg-secondary border border-border hover:border-primary/30 transition-all duration-300 hover:scale-105"
-            >
-              Resume
-            </a>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left - Photo */}
+            <div className="flex justify-center md:justify-end animate-slide-up">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 blur-3xl rounded-full" />
+                <img
+                  src="/Formals_photo.png"
+                  alt="Vaibhav Jain"
+                  className="relative w-64 h-64 md:w-80 md:h-80 object-contain drop-shadow-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Right - Content */}
+            <div className="text-center md:text-left">
+              <p className="text-primary font-display font-medium text-sm tracking-widest uppercase mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+                {personalInfo.tagline}
+              </p>
+              <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground mb-6 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+                Hi, I'm{" "}
+                <span className="text-gradient">{personalInfo.name.split(" ")[0]}</span>
+              </h1>
+              <p className="text-lg text-muted-foreground mb-10 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+                {personalInfo.bio}
+              </p>
+              <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+                <a
+                  href="#experience"
+                  className="px-8 py-3.5 rounded-xl font-medium text-primary-foreground transition-all duration-300 hover:scale-105"
+                  style={{ background: "var(--gradient-primary)" }}
+                >
+                  View My Work
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1k_5z-Vxw--MRRUFhr93Y6J_MThtmbeV9/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3.5 rounded-xl font-medium text-secondary-foreground bg-secondary border border-border hover:border-primary/30 transition-all duration-300 hover:scale-105"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
