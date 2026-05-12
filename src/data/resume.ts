@@ -24,7 +24,7 @@ export const skills = {
 
 export const experiences = [
   {
-    role: "IT Project Management Intern",
+    role: "IT Project Manager",
     company: "Orange Business Services",
     location: "Gurugram",
     period: "Jan 2026 – Present",
@@ -36,7 +36,7 @@ export const experiences = [
     description: "I manage 5 simultaneous cloud migration projects in the Application Industrialization team — taking enterprise apps and making them cloud-ready on Azure, CaaS/CNP, and VM-based infrastructure. My role is end-to-end: designing Target Solution Designs (TSDs), running stakeholder calls with monitoring/DB/cloud ops/DevOps teams, writing project docs, tracking risks, and owning milestone delivery. Key initiative: I noticed zero centralized tracking existed — designed a project execution tracker in Excel, then drove migration to JIRA for sprint planning and real-time visibility. Entirely my initiative — identified the gap, built it, drove adoption. Projected 20% efficiency improvement. Masterclass in enterprise PM: complex org structures, multiple stakeholders, tight timelines, structured governance.",
   },
   {
-    role: "Product Strategy & Operations Intern",
+    role: "Product Strategy & Operations Associate",
     company: "Pinch Lifestyle Services Pvt. Ltd.",
     location: "Gurugram",
     period: "Jun 2025 – Dec 2025",

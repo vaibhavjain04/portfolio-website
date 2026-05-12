@@ -42,7 +42,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://drive.google.com/file/d/1k_5z-Vxw--MRRUFhr93Y6J_MThtmbeV9/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1g-CtYIIBCmnbiDV-DVlAA9oMsYEmrlfB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 text-sm font-medium rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
@@ -78,7 +78,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://drive.google.com/file/d/1k_5z-Vxw--MRRUFhr93Y6J_MThtmbeV9/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1g-CtYIIBCmnbiDV-DVlAA9oMsYEmrlfB/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm font-medium rounded-lg bg-primary text-primary-foreground text-center"

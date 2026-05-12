@@ -58,7 +58,7 @@ const Index = () => {
                   View My Work
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1k_5z-Vxw--MRRUFhr93Y6J_MThtmbeV9/view?usp=drivesdk"
+                  href="https://drive.google.com/file/d/1g-CtYIIBCmnbiDV-DVlAA9oMsYEmrlfB/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3.5 rounded-xl font-medium text-secondary-foreground bg-secondary border border-border hover:border-primary/30 transition-all duration-300 hover:scale-105"
